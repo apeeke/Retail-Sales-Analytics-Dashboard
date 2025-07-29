@@ -30,6 +30,55 @@ Key business questions answered:
 
 ✅ Interactive filtering via Power BI
 
+### Dax Measures
+Metrics
+
+1. % Returned orders = 
+VAR _total_orders = DISTINCTCOUNT(Orders[Order ID])
+VAR _returned_orders =DISTINCTCOUNT(Returns[Order ID])
+VAR _perc =
+DIVIDE(
+    _returned_orders,
+    _total_orders)
+RETURN
+_perc
+
+2. profit = SUM(Orders[Profit])
+
+3. sales = SUM(Orders[Sales])
+
+4. % Returned orders py = 
+CALCULATE(
+    [% Returned orders],
+    SAMEPERIODLASTYEAR('date table'[Date])
+)
+
+5. profit py = 
+CALCULATE(
+    [profit],
+    SAMEPERIODLASTYEAR('date table'[Date])
+)
+
+6. sales py = 
+CALCULATE(
+    [sales],
+    SAMEPERIODLASTYEAR('date table'[Date])
+)
+
+7. vs PY - % returned orders = 
+[% Returned orders] - [% Returned orders py]
+
+8. vs PY - profit = 
+DIVIDE(
+    [profit] - [profit py],
+    [profit py]
+)
+
+9. vs PY - Sales = 
+DIVIDE(
+    [sales] - [sales py],
+    [sales py]
+)
 
 ##  Dataset Info
 
