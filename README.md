@@ -93,16 +93,16 @@ DIVIDE(
 - **Fields**: Order Date, Region, Category, Sub-Category, Ship Mode, Sales, Profit, Quantity, etc.
 
 
-  ## 🖼️ Visuals
+  ##  Visuals
 
 ![Superstore Sales Dashboard](Screenshot%202025-07-29%20160659.png)
 
 
-## ⚙️ Tools Used
+##  Tools Used
 
-- 📊 Power BI (Data modeling + Visualization)
-- 🐼 Excel/CSV (Raw data prep)
-- 🧠 Data analysis using DAX
+-  Power BI (Data modeling + Visualization)
+-  Excel/CSV (Raw data prep)
+- Data analysis using DAX
 
 
 
