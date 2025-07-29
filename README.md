@@ -46,7 +46,7 @@ Key business questions answered:
 
   ## 🖼️ Visuals
 
-![Superstore Sales Dashboard](dashboard/superstore-dashboard.png)
+![Superstore Sales Dashboard](Screenshot%202025-07-29%20160659.png)
 
 
 ## ⚙️ Tools Used
